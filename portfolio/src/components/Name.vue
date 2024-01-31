@@ -1,5 +1,5 @@
 <template>
-    <div class="home-screen">
+    <div class="">
       <div class="typing-effect">
         <span class="typed-text">{{ typedName }}</span>
         <span class="cursor blink">|</span>
@@ -8,6 +8,7 @@
   </template>
   
   <script>
+  import Socials from '@/components/Socials.vue'
   export default {
     data() {
       return {
@@ -18,6 +19,9 @@
     },
     mounted() {
       this.typeName();
+    },
+    components: {
+      Socials,
     },
     methods: {
       typeName() {
@@ -34,15 +38,7 @@
   };
   </script>
   
-  <style scoped>
-  .home-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1a1a1a; /* Very dark gray or black */
-  }
-  
+  <style scoped>  
   .typing-effect {
     color: #ffffff; /* White or very light gray */
     font-size: 2rem; /* Adjust font size as needed */
