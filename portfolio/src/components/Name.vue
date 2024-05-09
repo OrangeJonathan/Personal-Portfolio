@@ -40,22 +40,22 @@
   
   <style scoped>  
   .typing-effect {
-    color: #ffffff; /* White or very light gray */
-    font-size: 2rem; /* Adjust font size as needed */
-    font-family: 'Arial', sans-serif; /* Use your preferred font */
+    color: #fefefe; /* White or very light gray */
+    font-size: 3rem; /* Adjust font size as needed */
+    font-family: 'Cascadia Code'; /* Use your preferred font */
     white-space: nowrap;
   }
   
   .cursor {
-    animation: blink 0.7s infinite;
+    animation: blink 1.2s infinite;
   }
   
   @keyframes blink {
     0%, 100% {
-      opacity: 1;
+      opacity: 0;
     }
     50% {
-      opacity: 0;
+      opacity: 1;
     }
   }
   </style>
