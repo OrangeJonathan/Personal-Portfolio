@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="image">
-          <img src="C:\Users\jonat\OneDrive\Bureaublad\Bureau\JOnathan\Projects\Personal-Portfolio\portfolio\src\assets\JongJonathanHigherQuality.jpg" alt="Jonathan" width="200">
+          <img src="/src/assets/JongJonathanHigherQuality.jpg" alt="Jonathan" width="200">
         </div>
       </div>
     </div>
