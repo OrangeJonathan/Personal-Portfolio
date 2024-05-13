@@ -23,7 +23,7 @@
   <script>
   export default {
     name: 'AboutMe',
-    // You can add additional data, methods, etc. here if needed
+    // You can add additional data, methods, etc. here if needed 
   }
   </script>
   
