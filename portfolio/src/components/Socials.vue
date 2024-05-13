@@ -33,8 +33,25 @@
                 <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
         </a>
+        <a href="mailto:contact@jonathankat.nl" class="eMail">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 -3 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                >
+                <path d="M3 1h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2z"/>   
+                <path d="m21 3-10 7L1 3"/>         
+            </svg>
+        </a>
     </div>
 </template>
+  
 
 <script>
 export default {
@@ -64,7 +81,20 @@ a.gitHub:hover {
     color: #6e5494; /* GitHub purple */
 }
 
-a.linkedIn, a.gitHub {
+a.eMail {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+a.eMail:link, a.eMail:visited {
+    color: #bebebe; /* White or very light gray */
+}
+
+a.eMail:hover {
+    color: #772424; /* GitHub purple */
+}
+
+a.linkedIn, a.gitHub, a.eMail {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
