@@ -7,6 +7,7 @@
       <Socials class="marginbottom15vh"/>
     </div>
     <AboutMe class="marginbottom15vh"/>
+    <Projects />
   </div>
 </template>
 
