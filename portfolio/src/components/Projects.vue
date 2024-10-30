@@ -2,25 +2,20 @@
   <h1 class="master-title">
     <span>Projects</span> 
     <span class="cursor blink">|</span>
-  </h1> <!-- Add this line -->
-
-
-    <div class="project-list">
-      <div v-for="(project, index) in projects" :key="index" class="project-item">
-        <h2 class="project-title">{{ project.title }}</h2>
-        <div class="project-media">
-          <!-- If it's an image -->
-            <img v-if="project.type === 'image'" :src="project.media" :alt="project.title" style="width: 400px; height: 200px;">
-            
-            <!-- If it's a YouTube video -->
-            <iframe v-else :src="project.media" frameborder="0" allowfullscreen style="width: 400px; height: 200px;"></iframe>
-        </div>
-        <div class="project-description">
-          <p v-html="project.description"></p>
-        </div>
+  </h1>
+  <div class="project-list">
+    <div v-for="(project, index) in projects" :key="index" class="project-item">
+      <h2 class="project-title">{{ project.title }}</h2>
+      <div class="project-media">
+        <img v-if="project.type === 'image'" :src="project.media" :alt="project.title" class="project-media-content">
+        <iframe v-else :src="project.media" frameborder="0" allowfullscreen class="project-media-content"></iframe>
+      </div>
+      <div class="project-description">
+        <p v-html="project.description"></p>
       </div>
     </div>
-  </template>
+  </div>
+</template>
   
   <script>
 
@@ -42,6 +37,20 @@
             type: 'video', // 'image' or 'video'
             description: "Medieval Fortress is a game I made with a friend of mine. The game was created within 6 to 7 weeks during the fourth semester of my study. It's a tower defense game where you have to defend your 'castle' from animals that are possessed by an evil wizard. <br /> The game is made within Unity3D and is playable on  <a href='https://biiiy.itch.io/medievalfortress'> itch.io </a> " // Explanation of the project
           },
+          {
+            id: 3,
+            title: 'YawVR',
+            media: 'https://www.youtube.com/embed/HsIeX5ex8r0?si=qDZHQH1a_8kAFDJ6', // Path to image
+            type: 'video', // 'image' or 'video'
+            description: "The YawVR chair is a chair which is able to move with certain actions in game. During this project my team and I worked for Enversed Studios in order to develop an interactive game to be played in their VR center. The game is about exploring a planet whilst you are in the YawVR chair. " // Explanation of the project
+          },
+          {
+            id: 4,
+            title: 'Mars Runner',
+            media: '/src/assets/Images/Schermafbeelding 2024-10-28 142431.png', // Path to image
+            type: 'image', // 'image' or 'video'
+            description: "Mars Runner is an endless runner game. In this game you are on Mars and you have to evade obstacles. I used Assets from <a href='https://Kenney.nl'> Kenney.nl </a>. This game was created by me in Unity3D to get more knowledge about the Engine and Optimizing games. The game is playable on my <a href='https://orangeplayah.itch.io/mars-runner'> itch.io </a> " // Explanation of the project
+          },
           
           // Add more projects as needed
         ]
@@ -52,55 +61,61 @@
   
   <style scoped>
   .project-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* space between items */
+    justify-content: center; /* center the grid content */
+    padding: 20px;
   }
   
   .project-item {
-  width: 400px;
-  margin: 20px 150px; /* top/bottom margins are 20px, right/left margins are 40px */
-}
-
+    background-color: #333; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fefefe;
+    text-align: center;
+  }
   
   .project-title {
     cursor: pointer;
     font-family: 'Cascadia Code';
-    color: #fefefe; /* White or very light gray */
+    color: #fefefe;
     text-decoration: underline;
     font-size: 1.5em;
   }
   
-  .project-media {
+  .project-media-content {
     width: 100%;
-  }
-  
-  .project-media img,
-  .project-media iframe {
-    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
   }
   
   .project-description {
     padding: 10px;
-    color: #fefefe; /* White or very light gray */
+    color: #fefefe;
   }
-
+  
   .master-title {
-    color: #fefefe; /* White or very light gray */
-    font-size: 3rem; /* Adjust font size as needed */
-    font-family: 'Cascadia Code'; /* Use your preferred font */
+    color: #fefefe;
+    font-size: 3rem;
+    font-family: 'Cascadia Code';
     white-space: nowrap;
-}
-.cursor {
+  }
+  
+  .cursor {
     animation: blink 1.2s infinite;
   }
   
   @keyframes blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .project-list {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
     }
   }
   </style>
-  
