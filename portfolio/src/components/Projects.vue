@@ -47,7 +47,7 @@
           {
             id: 4,
             title: 'Mars Runner',
-            media: '/src/assets/Images/MarsRunner.jpeg', // Path to image
+            media: '/src/assets/Images/mars-runner-image.jpeg', // Path to image
             type: 'image', // 'image' or 'video'
             description: "Mars Runner is an endless runner game. In this game you are on Mars and you have to evade obstacles. I used Assets from <a href='https://Kenney.nl'> Kenney.nl </a>. This game was created by me in Unity3D to get more knowledge about the Engine and Optimizing games. The game is playable on my <a href='https://orangeplayah.itch.io/mars-runner'> itch.io </a>. View the code on <a href='https://github.com/OrangeJonathan/MarsRunner'> Github </a> " // Explanation of the project
           },
