@@ -28,28 +28,28 @@
             title: 'PokeRacer',
             media: 'https://www.youtube.com/embed/U5n4XEMcUnY?si=JjCoHDk2skEAH7rU', // YouTube video URL
             type: 'video', // 'image' or 'video'
-            description: "PokeRacer is a web application/game that I made in the third semester of my study. It was an introduction to fullstack development for me. Using Vue.js for my front-end and Java in the back-end. Using websockets I was able to make a game where it is possible to race against eachother in guessing Pokémon. Besides this it's also possible to chat with eachother to flex on your Pokémon guessing skills." // Explanation of the project
+            description: "PokeRacer is a web application/game that I made in the third semester of my study. It was an introduction to fullstack development for me. Using Vue.js for my front-end and Java in the back-end. Using websockets I was able to make a game where it is possible to race against eachother in guessing Pokémon. Besides this it's also possible to chat with eachother to flex on your Pokémon guessing skills. View the code on Github: <a href='https://github.com/OrangeJonathan/S3DB-IP-PokemonRace-BackEnd'> Backend </a> - <a href='https://github.com/OrangeJonathan/S3DB-IP-PokemonRace-FrontEnd'> Frontend </a>" // Explanation of the project
           },
           {
             id: 2,
             title: 'Medieval Fortress',
             media: 'https://www.youtube.com/embed/Gx8M9FG4yBo?si=OQJuQIV0C8fR3sd', // Path to image
             type: 'video', // 'image' or 'video'
-            description: "Medieval Fortress is a game I made with a friend of mine. The game was created within 6 to 7 weeks during the fourth semester of my study. It's a tower defense game where you have to defend your 'castle' from animals that are possessed by an evil wizard. <br /> The game is made within Unity3D and is playable on  <a href='https://biiiy.itch.io/medievalfortress'> itch.io </a> " // Explanation of the project
+            description: "Medieval Fortress is a game I made with a friend of mine. The game was created within 6 to 7 weeks during the fourth semester of my study. It's a tower defense game where you have to defend your 'castle' from animals that are possessed by an evil wizard. <br /> The game is made within Unity3D and is playable on  <a href='https://biiiy.itch.io/medievalfortress'> itch.io </a>. View the code on <a href='https://github.com/OrangeJonathan/MedievalFortress'> Github </a> " // Explanation of the project
           },
           {
             id: 3,
             title: 'YawVR',
             media: 'https://www.youtube.com/embed/HsIeX5ex8r0?si=qDZHQH1a_8kAFDJ6', // Path to image
             type: 'video', // 'image' or 'video'
-            description: "The YawVR chair is a chair which is able to move with certain actions in game. During this project my team and I worked for Enversed Studios in order to develop an interactive game to be played in their VR center. The game is about exploring a planet whilst you are in the YawVR chair. " // Explanation of the project
+            description: "The YawVR chair is a chair which is able to move with certain actions in game. During this project my team and I worked for Enversed Studios in order to develop an interactive game to be played in their VR center. The game is about exploring a planet whilst you are in the YawVR chair. During the project me and my team were instructed to build the game in Unreal Engine, but with the limitations of the YawVR chair we had to use Unreal4 instead of the newer Unreal5." // Explanation of the project
           },
           {
             id: 4,
             title: 'Mars Runner',
             media: '/src/assets/Images/Schermafbeelding 2024-10-28 142431.png', // Path to image
             type: 'image', // 'image' or 'video'
-            description: "Mars Runner is an endless runner game. In this game you are on Mars and you have to evade obstacles. I used Assets from <a href='https://Kenney.nl'> Kenney.nl </a>. This game was created by me in Unity3D to get more knowledge about the Engine and Optimizing games. The game is playable on my <a href='https://orangeplayah.itch.io/mars-runner'> itch.io </a> " // Explanation of the project
+            description: "Mars Runner is an endless runner game. In this game you are on Mars and you have to evade obstacles. I used Assets from <a href='https://Kenney.nl'> Kenney.nl </a>. This game was created by me in Unity3D to get more knowledge about the Engine and Optimizing games. The game is playable on my <a href='https://orangeplayah.itch.io/mars-runner'> itch.io </a>. View the code on <a href='https://github.com/OrangeJonathan/MarsRunner'> Github </a> " // Explanation of the project
           },
           
           // Add more projects as needed
