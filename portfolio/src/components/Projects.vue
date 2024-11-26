@@ -51,8 +51,15 @@
             type: 'image', // 'image' or 'video'
             description: "Mars Runner is an endless runner game. In this game you are on Mars and you have to evade obstacles. I used Assets from <a href='https://Kenney.nl'> Kenney.nl </a>. This game was created by me in Unity3D to get more knowledge about the Engine and Optimizing games. The game is playable on my <a href='https://orangeplayah.itch.io/mars-runner'> itch.io </a>. View the code on <a href='https://github.com/OrangeJonathan/MarsRunner'> Github </a> " // Explanation of the project
           },
+          {
+            id: 5,
+            title: 'MindSwap',
+            media: 'https://www.youtube.com/embed/IcCN7d_P_hE?si=JQso_x8MV1MeEQ9t',
+            type: 'video',
+            description: "MindSwap is a Puzzle/Platformer game, inspired by Portal (2). In this game you try to solve puzzles by using the ability to 'Swap Bodies', so you switch between different characters, with different abilities, in order to overcome challenges. The game is playable on <a href='https://orangeplayah.itch.io/mindswap'> Itch.io </a>"
+          }
           
-          // Add more projects as needed
+          
         ]
       };
     }
