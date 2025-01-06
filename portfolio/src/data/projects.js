@@ -27,7 +27,7 @@ export const projects = [
     id: 4,
     title: 'Mars Runner',
     media: '/images/mars-runner-image.jpeg',
-    video: 'https://www.youtube.com/embed/mars-runner-video',
+    video: 'https://www.youtube.com/embed/F5VI24otVf8?si=SysNoCy6twKMVc5d',
     description: "Mars Runner is an endless runner game. In this game you are on Mars and you have to evade obstacles. I used Assets from <a href='https://Kenney.nl'> Kenney.nl </a>. This game was created by me in Unity3D to get more knowledge about the Engine and Optimizing games. The game is playable on my <a href='https://orangeplayah.itch.io/mars-runner'> itch.io </a>. View the code on <a href='https://github.com/OrangeJonathan/MarsRunner'> Github </a>",
     details: "Mars Runner was a solo project that helped me improve my skills in Unity3D. I focused on optimizing the game for better performance and creating engaging gameplay mechanics. This project also allowed me to experiment with different assets and learn more about game design. It was a great opportunity to apply what I had learned in previous projects and continue to grow as a game developer."
   },

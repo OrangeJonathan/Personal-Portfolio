@@ -4,10 +4,10 @@
       <div class="title">
         <Name />
       </div>
-      <Socials class="marginbottom5vh"/> <!-- Adjusted margin class -->
+      <Socials class="marginbottom5vh"/> 
       <div class="buttons">
-        <button @click="currentView = 'projects'" :class="{ active: currentView === 'projects' }" class="cascadiacodefont">Projects</button>
-        <button @click="currentView = 'aboutMe'" :class="{ active: currentView === 'aboutMe' }" class="cascadiacodefont">About Me</button>
+        <button @click="currentView = 'projects'" :class="{ active: currentView === 'projects', 'blinking-cursor': currentView === 'projects' }" class="cascadiacodefont">Projects</button>
+        <button @click="currentView = 'aboutMe'" :class="{ active: currentView === 'aboutMe', 'blinking-cursor': currentView === 'aboutMe' }" class="cascadiacodefont">About Me</button>
         <div class="slider" :class="{ 'slide-projects': currentView === 'projects', 'slide-aboutMe': currentView === 'aboutMe' }"></div>
       </div>
     </div>
@@ -62,7 +62,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #151515;
+  background: linear-gradient(to bottom, #2a2a2a, #111111); /* Subtle gradient */
   overflow: auto;
   height: 100vh;
 }
@@ -84,7 +84,7 @@ export default {
 .buttons {
   position: relative;
   display: flex;
-  gap: 10px;
+  gap: 20px; /* Increased gap between buttons */
   margin-bottom: 5vh; /* Reduced margin-bottom */
 }
 
@@ -95,8 +95,10 @@ button {
   font-size: 1.5em;
   cursor: pointer;
   padding: 10px 20px;
+  width: 160px; /* Increased fixed width for buttons */
   position: relative;
   font-family: 'Cascadia Code'; /* Use your preferred font */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 button.active {
@@ -122,5 +124,16 @@ button:hover {
 
 .slide-aboutMe {
   transform: translateX(100%);
+}
+
+.blinking-cursor::after {
+  content: '|';
+  animation: blink 1.2s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 </style>
