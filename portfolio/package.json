@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "portfolio": "file:",
-    "vue": "^3.3.11"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.0",
+    "vue": "^3.3.11",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
