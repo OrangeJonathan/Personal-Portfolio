@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/home.vue';
 import ProjectDetail from '@/views/ProjectDetail.vue';
+import QRCodeGenerator from '@/components/QRCodeGenerator.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/project/:id',
     name: 'ProjectDetail',
     component: ProjectDetail
+  },
+  {
+    path: '/qr',
+    name: 'QR generator',
+    component: QRCodeGenerator
   }
 ];
 
