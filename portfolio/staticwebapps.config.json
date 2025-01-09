@@ -1,0 +1,4 @@
+{
+    "navigationFallBack": "/index.html",
+    "exclude": ["/images/*.{png,jpg,jpeg,gif,ico}", "/*,{css,scss,js}" ]
+}

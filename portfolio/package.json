@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
+    "axios": "^1.7.9",
     "portfolio": "file:",
     "qrcode-vue3": "^1.7.1",
     "slick-carousel": "^1.8.1",
