@@ -7,14 +7,18 @@
       <Socials class="marginbottom5vh"/> 
       <div class="buttons">
         <button @click="currentView = 'projects'" :class="{ active: currentView === 'projects', 'blinking-cursor': currentView === 'projects' }" class="cascadiacodefont">Projects</button>
+        <button @click="currentView = 'tools'" :class="{ active: currentView === 'tools', 'blinking-cursor': currentView === 'tools' }" class="cascadiacodefont">Tools</button>
         <button @click="currentView = 'aboutMe'" :class="{ active: currentView === 'aboutMe', 'blinking-cursor': currentView === 'aboutMe' }" class="cascadiacodefont">About Me</button>
-        <div class="slider" :class="{ 'slide-projects': currentView === 'projects', 'slide-aboutMe': currentView === 'aboutMe' }"></div>
+        <div class="slider" :class="{ 'slide-projects': currentView === 'projects', 'slide-aboutMe': currentView === 'aboutMe',  'slide-tools': currentView === 'tools'}"></div>
       </div>
     </div>
     <div v-if="currentView === 'projects'">
       <Projects />
     </div>
-    <div v-else>
+    <div v-if="currentView === 'tools'">
+      <Tools />
+    </div>
+    <div v-if="currentView === 'aboutMe'">
       <AboutMe />
     </div>
   </div>
@@ -25,6 +29,8 @@ import Name from '@/components/Name.vue'
 import Socials from '@/components/Socials.vue'
 import Projects from '@/components/Projects.vue'
 import AboutMe from '@/components/AboutMe.vue'
+import Tools from '@/components/Tools.vue'
+
 
 export default {
   name: 'Home',
@@ -33,6 +39,7 @@ export default {
     Socials,
     Projects,
     AboutMe,
+    Tools
   },
   data() {
     return {
@@ -113,7 +120,7 @@ button:hover {
   position: absolute;
   bottom: 0;
   height: 2px;
-  width: 50%;
+  width: 33%;
   background-color: #333;
   transition: transform 0.3s ease;
 }
@@ -122,9 +129,14 @@ button:hover {
   transform: translateX(0%);
 }
 
-.slide-aboutMe {
+.slide-tools {
   transform: translateX(100%);
 }
+
+.slide-aboutMe {
+  transform: translateX(200%);
+}
+
 
 .blinking-cursor::after {
   content: '|';
