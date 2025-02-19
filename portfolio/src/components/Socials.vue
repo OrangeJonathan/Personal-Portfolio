@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a href="https://www.linkedin.com/in/jonathan-kat-a86387252/" class="linkedIn">
+        <a href="https://www.linkedin.com/in/jonathankat/" class="linkedIn">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

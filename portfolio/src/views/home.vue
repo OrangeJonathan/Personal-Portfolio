@@ -1,6 +1,9 @@
 <template>
   <div class="home-screen">
-    <div class="titlebackground">
+    <div class="titlebackground" id="content">
+      <a href="https://mmmlabel.tech">
+        <img src="/images/cyborg.png" alt="mmmlabel Cyborg for use of GenAI" class="top-right-image" title="For this website I used AI to generate the CSS and a little bit of the Javascript, but I still had to edit lots of it myself!"/>
+      </a>
       <div class="title">
         <Name />
       </div>
@@ -63,6 +66,17 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
 }
 
 .home-screen {
